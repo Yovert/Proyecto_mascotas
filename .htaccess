@@ -1,0 +1,3 @@
+ErrorDocument 403 /Proyecto_mascotas/403.php
+
+ErrorDocument 404 /Proyecto_mascotas/404.php
