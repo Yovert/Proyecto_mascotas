@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+body{
+    background: rgb(0, 153, 255);
+}
+.Tasks{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5vw;
+}
+.getInto{
+    width: 35vw;
+    height: 30vw;
+    border-radius: 1.5vw;
+    box-shadow: 0vw 4vw 6vw 
+    rgba(0,0, 0, 0.8);
+    padding: 2vw;
+}
+.image_present img{
+    width: 5vw;
+    height: 7vw;
+    border-radius: 1vw;
+}
+.getInto__title{
+    font-size: 1.7vw;
+}
+.getInto__data{
+    display: grid;
+    text-align: left;
+    width: 24vw;
+    margin: auto;
+    padding-top: 1vw;
+}
+.getInto__data input{
+    border: none;
+    border-radius: 0.4vw;
+    height: 2vw;
+    padding-left: 1vw;
+    outline: none;
+}
+.getInto__btn{
+    position: relative;
+    top: 2vw;
+}
+.getInto__btn input{
+    width: 18vw;
+    height: 3vw;
+    border: none;
+    font-size: 2vw;
+    color: #fff;
+    border-radius: 1vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+    rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}

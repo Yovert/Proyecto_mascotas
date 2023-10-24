@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+body{
+    background: rgb(0, 225, 255);
+}
+.Tasks{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3vw;
+}
+.check_in--images img{
+    width: 7vw;
+    height: 9vw;
+    border-radius: 1vw;
+}
+.check_in {
+    width: 35vw;
+    height: 40vw;
+    border-radius: 1.5vw;
+    box-shadow: 0vw 4vw 6vw 
+    rgba(0,0, 0, 0.8);
+    padding: 2vw;
+}
+.check_in--title{
+    font-size: 1.7vw;
+}
+.check_in--data{
+    display: grid;
+    text-align: left;
+    width: 24vw;
+    margin: auto;
+    padding-top: 1vw;
+}
+.check_in--data input{
+    border: none;
+    border-radius: 0.4vw;
+    height: 2vw;
+    padding-left: 1vw;
+    outline: none;
+}
+.check_in--btn{
+    position: relative;
+    top: 4vw;
+    cursor: pointer;
+}
+.photho{
+    margin-top: 1vw;
+    display: grid;
+}
+.photho input{
+    width: 18vw;
+    height: 3vw;
+    background: rgb(153, 95, 153);
+    font-size: 1.2vw;
+}
