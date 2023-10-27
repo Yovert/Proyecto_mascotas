@@ -5,3 +5,12 @@ body{
     text-align: center;
     background: rgb(113, 113, 224);
 }
+.icon img{
+    width: 5vw;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+
+}

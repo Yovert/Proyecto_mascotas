@@ -9,11 +9,11 @@ body{
     background: rgb(0, 225, 255);
 }
 .Tasks{
-    display: grid;
-    align-items: center;
+    display: flex;
+    /* align-items: center;
     text-align: center;
-    justify-content: center;
-    padding-top: 3vw;
+    justify-content: center; */
+    /* padding: 3vw 3vw 0vw 3vw; */
 }
 .check_in--images img{
     width: 7vw;
@@ -22,11 +22,22 @@ body{
 }
 .check_in {
     width: 35vw;
-    height: 40vw;
+    height: 42vw;
     border-radius: 1.5vw;
     box-shadow: 0vw 4vw 6vw 
     rgba(0,0, 0, 0.8);
-    padding: 2vw;
+    padding: 1vw 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 3vw;
+    left: 3vw;
+}
+.logo img{
+    width: 5vw;
 }
 .check_in--title{
     font-size: 1.7vw;
@@ -35,8 +46,9 @@ body{
     display: grid;
     text-align: left;
     width: 24vw;
+    height: 5vw;
     margin: auto;
-    padding-top: 1vw;
+    padding-top: 0.5vw;
 }
 .check_in--data input{
     border: none;
@@ -47,16 +59,32 @@ body{
 }
 .check_in--btn{
     position: relative;
-    top: 4vw;
-    cursor: pointer;
+    top: 2vw;
 }
 .photho{
-    margin-top: 1vw;
+    padding-top: 1vw;
     display: grid;
+    margin: auto;
+    text-align: left;
+    justify-content: left;
 }
 .photho input{
     width: 18vw;
     height: 3vw;
-    background: rgb(153, 95, 153);
     font-size: 1.2vw;
+    margin: auto;
+    cursor: pointer;
+}
+.check_in--btn input{
+    width: 10vw;
+    height: 3vw;
+}
+.image{
+    width: 35vw;
+    height: 99.3vh;
+    padding-right: 2vh;
+}
+.image img{
+    width: 100%;
+    height: 100%;
 }

@@ -6,6 +6,7 @@ class User{
     public string $username;
     public string $email;
     public string $password;
+    public int $RoleId;
     public string $photo;
     
 }
