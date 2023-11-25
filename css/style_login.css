@@ -6,14 +6,15 @@
     font-family: 'Tilt Neon', sans-serif;
 }
 body{
-    background: rgb(0, 153, 255);
+    background-image: url("../images/fondito.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .Tasks{
     display: grid;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top: 5vw;
 }
 .getInto{
     width: 35vw;
@@ -22,6 +23,10 @@ body{
     box-shadow: 0vw 4vw 6vw 
     rgba(0,0, 0, 0.8);
     padding: 2vw;
+    position: relative;
+    top: 6vw;
+    background: rgba(0,0, 0, 0.5);
+    color: #fff;
 }
 .image_present img{
     width: 5vw;

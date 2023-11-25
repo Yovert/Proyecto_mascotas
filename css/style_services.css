@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+/* body{
+    background: rgb(214, 202, 202);
+} */
+.info{
+    width: 20vw;
+    height: 15vw;
+    border-radius: 1vw;
+    box-shadow:  0vw 4vw 6vw 
+    rgba(0,0, 0, 0.8);
+    overflow: hidden;
+    position: relative;
+    top: 2vw;
+    left: 5vw;
+    background: rgba(0,0, 0, 0.8);
+    color: #fff;
+    padding: 2vw 1vw;
+    text-align: center;
+}
+.Tasks{
+    background-image: url("../images/nice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services{
+    display: flex;
+    gap: 2vw;
+}
+.create_pet{
+    height: 20vw;
+    width: 20vw;
+    display: grid;
+    justify-content: center;
+    padding: 3vw 1vw;
+    background: rgba(0,0, 0, 0.2);
+    /* color: #fff; */
+    box-shadow:  0vw 4vw 6vw 
+    rgba(0,0, 0, 0.8);
+    border-right: 0.1vw solid rgb(172, 172, 204);
+    border-left: 0.1vw solid rgb(172, 172, 204);
+    border-radius: 1.2vw;
+}
+.create_pet form{
+    display: grid;
+}
+.create_pet input{
+    border: none;
+    border-radius: 0.2vw;
+    background: none;
+    border-bottom: 0.2vw solid rgb(172, 172, 204);
+    border-top: 0.2vw solid rgb(172, 172, 204);
+    color: #fff;
+    height: 1.8vw;
+    padding-left: 1vw;
+    outline: none;
+}
+.btn_create{
+    margin: auto;
+}
+.btn_create input{
+    text-align: center;
+    background: black;
+    color: #fff;
+    font-size: 1.1vw;
+    padding: 0%;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 1.3vw;
+    border: none;
+    cursor: pointer;
+}
+.content_create_pet{
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+    margin: auto;
+    width: 70vw;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 4vw;
+}
+.info_content-btn{
+    position: relative;
+    top: 3vw;
+    width: 10vw;
+    margin: auto;
+}
+.info_content-btn button{
+    text-align: center;
+    background: black;
+    color: #fff;
+    font-size: 1.1vw;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 1.3vw;
+    border: none;
+    cursor: pointer;
+}
+
+/* ---------------------- */
+.table{
+    display: flex;
+    width: 25vw;
+    height: 15vw;
+    border: 0.1vw solid;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+.table::-webkit-scrollbar{
+    width: 0vw;
+}
+.added_info{
+    border-left: 0.1vw solid;
+    border-right: 0.1vw solid;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    gap: 1vw;
+    text-align: center;
+    height: 100%;
+}
+.column_name{
+    border-bottom: 0.1vw solid;
+    width: 100%;
+    height: 2vw;
+    background: black;
+    color: #fff;
+}

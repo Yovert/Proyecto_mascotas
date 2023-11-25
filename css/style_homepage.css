@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.icon img{
+    width: 5vw;
+}
+.links{
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    height: 8vw;
+    padding:0.5vw 1vw ;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+body{
+    background-image: url("../images/nice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Tasks{
+    display: grid;
+    width: 100%;
+}
+.major{
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 95vw;
+    margin: auto;
+    height: 83vh;
+    border-radius: 12vw 0vw 4vw 4vw ;
+    padding: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+.menu button{
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    border-radius: 2vw;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+.checkIn_pet{
+    display: none;
+    justify-content: center;
+    height: 35vw;
+    width: 30vw;
+    border-right: 0.1vw solid rgb(172, 172, 204);
+    border-left: 0.1vw solid rgb(172, 172, 204);
+    border-radius: 1.2vw;
+    position: relative;
+    top: -3vw;
+}
+.update_pet{
+    display: none;
+    justify-content: center;
+    height: 35vw;
+    width: 30vw;
+    border-right: 0.1vw solid rgb(172, 172, 204);
+    border-left: 0.1vw solid rgb(172, 172, 204);
+    border-radius: 1.2vw;
+    position: relative;
+    top: -3vw;
+}
+.delete_pet{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 17vw;
+    width: 24vw;
+    border-right: 0.1vw solid rgb(172, 172, 204);
+    border-left: 0.1vw solid rgb(172, 172, 204);
+    border-radius: 1.2vw;
+    padding: 1vw;
+    gap: 1vw;
+}
+.delete_pet form{
+    display: grid;
+    gap: 2vw;
+}
+
+.checkIn_data h2{
+    margin: auto;
+}
+.checkIn_data{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 1vw;
+}
+
+.form_pet{
+    display: grid;
+    gap: 2vw;
+}
+.checkIn_pet--types{
+    display: flex;
+    justify-content: space-between;
+}
+.checkIn_pet--types select{
+    width: 10vw;
+    height: 2vw;
+}
+.checkIn_pet--info{
+    display: flex;
+    flex-direction: column;
+}
+.checkIn_pet--info input{
+    border: none;
+    border-radius: 0.2vw;
+    background: none;
+    border-bottom: 0.2vw solid rgb(172, 172, 204);
+    border-top: 0.2vw solid rgb(172, 172, 204);
+    color: #fff;
+    height: 1.8vw;
+    padding-left: 1vw;
+    outline: none;
+}
+.checkIn_pet--btn {
+    margin: auto;
+}
+.checkIn_pet--btn input{
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.2vw;
+    border-radius: 2vw;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+.control_btn button{
+    text-align: center;
+    background: rgb(92, 87, 87)aba;
+    color: black;
+    font-size: 1.1vw;
+    padding: 0%;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 1.3vw;
+    border: none;
+    cursor: pointer;
+}
+.services{
+    display: flex;
+    gap: 3vw;
+}
+
+.added_info{
+    border-left: 0.1vw solid;
+    border-right: 0.1vw solid;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    gap: 1vw;
+    text-align: center;
+    height: 100%;
+}
+.column_name{
+    border-bottom: 0.1vw solid;
+    width: 100%;
+    height: 2vw;
+}
+.content h1{
+    font-size: 2vw;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.table{
+    display: flex;
+    width: 48vw;
+    height: 25vw;
+    border: 0.1vw solid;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.table::-webkit-scrollbar{
+    width: 0vw;
+}
+/* -------------------------- */
+.file-input {
+    position: relative;
+    width: 100%; 
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.4vw;
+    cursor: pointer;
+  }
+  
+  .file-input input[type="file"] {
+    position: absolute;
+    font-size: 2vw;
+    opacity: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  .file-input label {
+    display: block;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    text-align: center;
+    padding: 2vw;
+  }
+  
+  .file-input img {
+    width: 4vw; /* Ajusta el tamaño del icono */
+    vertical-align: middle;
+    margin-right: 2vw;
+  }
+  

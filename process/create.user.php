@@ -6,7 +6,9 @@ $userR = new User;
 $userR->name =  $_POST["name"];
 $userR->username = $_POST["username"];
 $userR->email = $_POST["email"];
-$userR->password = $_POST["password"];
+$userR->RoleId = $_POST["Roles_id"];
+$userR->password =(password_hash(($_POST["password"]), PASSWORD_DEFAULT));
+$cant = strlen($_POST["password"]);
 $validar = true;
 $status=true;
 if ($userR->name == "" ) {
@@ -21,17 +23,26 @@ if ( $userR->email == "") {
     $validar = false;
     $error["email"] = "Campo obligatorio";
 }
-if ( $userR->password == "") {
+if ($_POST["password"] == "") {
     $validar = false;
     $error["password"] = "Campo obligatorio";
+    
+}elseif($_POST["password"] != ""){
+    if(!preg_match("/[!@#$%^&*()_+=\[\]{};:,<.>?~]/", $_POST["password"]))
+    {
+        $validar = false;
+        $error["password"] = "Minimum 1 special character";
+    }
+    if($cant < 5){
+        $validar = false;
+        $error["password"] = "Minimum 5 characters";
+    }
+} else{
+    $error["password"] = "";
 }
 
 if ($validar) {
     $status = $user->create($userR);
-    if ($status) {
-        echo"Guardado";
-    } else {
-        echo "Sin Guardar";
-    }
+    header("location:login.php");
 }
 

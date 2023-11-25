@@ -6,14 +6,15 @@
     font-family: 'Tilt Neon', sans-serif;
 }
 body{
-    background: rgb(0, 225, 255);
+    background-image: url("../images/fondito.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .Tasks{
     display: flex;
-    /* align-items: center;
+    align-items: center;
     text-align: center;
-    justify-content: center; */
-    /* padding: 3vw 3vw 0vw 3vw; */
+    justify-content: center;
 }
 .check_in--images img{
     width: 7vw;
@@ -22,19 +23,22 @@ body{
 }
 .check_in {
     width: 35vw;
-    height: 42vw;
+    height: 40vw;
     border-radius: 1.5vw;
     box-shadow: 0vw 4vw 6vw 
     rgba(0,0, 0, 0.8);
-    padding: 1vw 6vw;
+    padding: 0.5vw 6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     position: relative;
-    top: 3vw;
+    top: 1vw;
     left: 3vw;
+    background: rgba(0,0, 0, 0.5);
+    color: #fff;
+}
+.check_in label{
+    font-size: 1vw;
 }
 .logo img{
     width: 5vw;
@@ -43,48 +47,69 @@ body{
     font-size: 1.7vw;
 }
 .check_in--data{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     width: 24vw;
     height: 5vw;
     margin: auto;
-    padding-top: 0.5vw;
 }
 .check_in--data input{
     border: none;
     border-radius: 0.4vw;
-    height: 2vw;
+    height: 1.8vw;
     padding-left: 1vw;
     outline: none;
 }
 .check_in--btn{
     position: relative;
-    top: 2vw;
+    top: 0.5vw;
 }
-.photho{
-    padding-top: 1vw;
-    display: grid;
-    margin: auto;
-    text-align: left;
-    justify-content: left;
-}
-.photho input{
-    width: 18vw;
+/* -------------------------- */
+.file-input {
+    position: relative;
+    width: 100%; 
     height: 3vw;
-    font-size: 1.2vw;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.4vw;
     cursor: pointer;
+  }
+  
+.file-input input[type="file"] {
+    position: absolute;
+    font-size: 2vw;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+  
+.file-input label {
+    display: block;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    text-align: center;
+    padding: 2vw;
+}
+  
+.file-input img {
+    width: 4vw; /* Ajusta el tamaño del icono */
+    vertical-align: middle;
+    margin-right: 2vw;
 }
 .check_in--btn input{
     width: 10vw;
     height: 3vw;
+    border-radius: 0.7vw;
+    cursor: pointer;
+    background: rgba(0,0, 0, 0.8);
+    color: #fff;
 }
-.image{
-    width: 35vw;
-    height: 99.3vh;
-    padding-right: 2vh;
+.rol{
+    display: flex;
+    justify-content: space-between;
 }
-.image img{
-    width: 100%;
-    height: 100%;
+.rol select{
+    width: 10vw;
 }
